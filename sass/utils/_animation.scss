@@ -1,0 +1,19 @@
+@keyframes animation-subscribe-icon {
+
+    0%,
+    100% {
+        transform: translateY(-50%) rotateZ(0deg);
+    }
+
+    39% {
+        transform: translate(200%, -200%);
+    }
+
+    40% {
+        transform: translate(200%, -200%) rotateZ(-180deg);
+    }
+
+    60% {
+        transform: translate(70%, -70%) rotateZ(-180deg);
+    }
+}

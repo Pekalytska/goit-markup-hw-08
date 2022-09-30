@@ -1,0 +1,41 @@
+%main-button {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  cursor: pointer;
+  border: none;
+
+  transition: background-color 250ms var(--transition-timing-function),
+    outline 250ms var(--transition-timing-function);
+
+  &:hover {
+    background-color: #3365ff;
+  }
+
+  &:focus {
+    outline: 1px solid var(--secondary-background-color);
+  }
+}
+
+%emblem {
+  fill: var(--icon-background-color);
+
+  transition: fill 250ms var(--transition-timing-function);
+}
+
+%join-subscribe-title {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
