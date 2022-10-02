@@ -583,9 +583,6 @@ body {
     padding-bottom: 24px;
     margin-bottom: 30px;
   }
-  .team__img {
-    max-height: 460px;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list {
@@ -835,7 +832,6 @@ body {
 .portfolio__overflow-wrap {
   position: relative;
   overflow: hidden;
-  max-height: 294px;
 }
 .portfolio__text-wrap {
   padding: 20px 24px;
@@ -888,10 +884,19 @@ body {
   .menu__item:nth-child(-n+3) {
     margin-bottom: 15px;
   }
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__item {
     flex-basis: calc((100% - 30px) / 2);
+  }
+  .portfolio__item:not(:nth-child(even)) {
+    margin-right: 30px;
+  }
+  .portfolio__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -902,17 +907,17 @@ body {
   .portfolio__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
-    margin-left: -30px;
-  }
-  .portfolio__item {
-    margin-bottom: 30px;
-    margin-left: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     flex-basis: calc((100% - 60px) / 3);
+  }
+  .portfolio__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .portfolio__item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
   }
 }
 .backdrop {
