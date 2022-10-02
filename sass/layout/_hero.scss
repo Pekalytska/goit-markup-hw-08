@@ -1,8 +1,5 @@
 .hero {
-  max-width: 1600px;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
 
@@ -15,23 +12,62 @@
   background-size: cover;
 
   &__title {
-    width: 696px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
   }
 
   &__btn {
-      @extend %main-button;
+    @extend %main-button;
 
-      padding: 10px 32px;
+    padding: 10px 32px;
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .hero {
+    max-width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    &__title {
+      width: 360px;
+
+      font-size: 26px;
+      line-height: 1.62;
+    }
+
+    &__btn {
+      padding: 10px 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    &__title {
+      width: 696px;
+
+      font-size: 44px;
+      line-height: 1.36;
+    }
+
+    &__btn {
+      padding: 10px 32px;
+    }
+  }
+}

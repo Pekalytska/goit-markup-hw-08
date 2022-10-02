@@ -85,7 +85,7 @@
     padding-bottom: 26px;
   }
 
-  .mobile-menu__container{
+  .mobile-menu__container {
     display: flex;
     align-items: center;
 
@@ -169,12 +169,12 @@
     display: flex;
     align-items: center;
     width: 100%;
-  }
 
-  .mobile-menu__burger-btn,
-  .mobile-menu__close-btn,
-  .mobile-menu__social-list {
-    display: none;
+    &__burger-btn,
+    &__close-btn,
+    &__social-list {
+      display: none;
+    }
   }
 }
 
@@ -187,8 +187,8 @@
 
   .nav__link,
   .contacts__link {
-      font-size: 14px;
-      line-height: 1.14;
+    font-size: 14px;
+    line-height: 1.14;
   }
 
   .contacts {
