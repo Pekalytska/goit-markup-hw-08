@@ -109,6 +109,9 @@ body {
   color: var(--title-color);
   font-family: var(--main-font);
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 .container {
   padding-left: 15px;
@@ -431,6 +434,11 @@ body {
   padding: 10px 32px;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url("../images/hero@2x.jpg");
+  }
+}
 @media screen and (max-width: 1199px) {
   .hero {
     max-width: 480px;
@@ -928,6 +936,7 @@ body {
   height: 100vh;
   background-color: var(--backdrop-color);
   transition: opacity 250ms var(--transition-timing-function), visibility 250ms var(--transition-timing-function);
+  overflow: auto;
 }
 
 .backdrop.is-hidden {

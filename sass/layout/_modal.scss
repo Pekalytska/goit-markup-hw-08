@@ -7,6 +7,8 @@
   background-color: var(--backdrop-color);
   transition: opacity 250ms var(--transition-timing-function),
     visibility 250ms var(--transition-timing-function);
+
+    overflow: auto;
 }
 
 .backdrop.is-hidden {

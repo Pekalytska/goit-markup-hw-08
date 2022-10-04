@@ -29,58 +29,67 @@
         </a>
 
         <div class="mobile-menu" data-menu>
-            <div class="container mobile-menu__container">
-                <button class="mobile-menu__close-btn" type="button">
-                    <svg width="40" height="40">
-                        <use href="./images/icons.svg#close-burger" data-menu-close></use>
-                    </svg>
-                </button>
-                <nav class="nav">
-                    <ul class="list nav__list">
-                        <li class="item nav__item">
-                            <a class="link nav__link nav__current-link" href="./index.html">Студія</a>
-                        </li>
-                        <li class="item nav__item">
-                            <a class="link nav__link" href="./portfolio.html">Портфоліо</a>
-                        </li>
-                        <li class="item nav__item">
-                            <a class="link nav__link" href="#contacts">Контакти</a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="list contacts">
-                    <li class="item contacts__item contacts__mail">
-                        <a class="link contacts__link" href="mailto:info@devstudio.com">
-                            <svg class="contacts__icon icon__mail">
-                                <use href="./images/icons.svg#envelope"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="item contacts__item contacts__phone">
-                        <a class="link contacts__link" href="tel:+380961111111">
-                            <svg class="contacts__icon icon__phone">
-                                <use href="./images/icons.svg#phone"></use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
-                <ul class="list mobile-menu__social-list">
-                    <li class="item mobile-menu__social-item">
-                        <a class="link mobile-menu__social-link" href="">Instagram</a>
-                    </li>
-                    <li class="item mobile-menu__social-item">
-                        <a class="link mobile-menu__social-link" href="">Twitter</a>
-                    </li>
-                    <li class="item mobile-menu__social-item">
-                        <a class="link mobile-menu__social-link" href="">Facebook</a>
-                    </li>
-                    <li class="item mobile-menu__social-item">
-                        <a class="link mobile-menu__social-link" href="">LinkedIn</a>
-                    </li>
-                </ul>
-            </div>
+          <div class="container mobile-menu__container">
+            <button class="mobile-menu__close-btn" type="button">
+              <svg width="40" height="40">
+                <use
+                  href="./images/icons.svg#close-burger"
+                  data-menu-close
+                ></use>
+              </svg>
+            </button>
+            <nav class="nav">
+              <ul class="list nav__list">
+                <li class="item nav__item">
+                  <a
+                    class="link nav__link nav__current-link"
+                    href="./index.html"
+                    >Студія</a
+                  >
+                </li>
+                <li class="item nav__item">
+                  <a class="link nav__link" href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="item nav__item">
+                  <a class="link nav__link" href="#contacts">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="list contacts">
+              <li class="item contacts__item contacts__mail">
+                <a class="link contacts__link" href="mailto:info@devstudio.com">
+                  <svg class="contacts__icon icon__mail">
+                    <use href="./images/icons.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="item contacts__item contacts__phone">
+                <a class="link contacts__link" href="tel:+380961111111">
+                  <svg class="contacts__icon icon__phone">
+                    <use href="./images/icons.svg#phone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+            <ul class="list mobile-menu__social-list">
+              <li class="item mobile-menu__social-item">
+                <a class="link mobile-menu__social-link" href="">Instagram</a>
+              </li>
+              <li class="item mobile-menu__social-item">
+                <a class="link mobile-menu__social-link" href="">Twitter</a>
+              </li>
+              <li class="item mobile-menu__social-item">
+                <a class="link mobile-menu__social-link" href="">Facebook</a>
+              </li>
+              <li class="item mobile-menu__social-item">
+                <a class="link mobile-menu__social-link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <button class="mobile-menu__burger-btn" type="button">
@@ -90,7 +99,6 @@
         </button>
       </div>
     </header>
-
 
     <main>
       <!--hero-->
@@ -163,47 +171,140 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="list work__list">
             <li class="work__item">
-              <img
-                src="./images/work/box1.jpg"
-                alt="Ноутбук"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/box1.webp    1x,
+                    ./images/work/box1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/box1.img    1x,
+                    ./images/work/box1@2x.img 2x
+                  "
+                />
+                <img
+                  src="./images/work/box1.jpg"
+                  alt="Ноутбук"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="work__overflow-text">Десктопні додатки</p>
             </li>
             <li class="work__item">
-              <img
-                src="./images/work/box2.jpg"
-                alt="Телефон"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/box2.webp    1x,
+                    ./images/work/box2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/box2.img    1x,
+                    ./images/work/box2@2x.img 2x
+                  "
+                />
+                <img
+                  src="./images/work/box2.jpg"
+                  alt="Телефон"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="work__overflow-text">Мобільні додатки</p>
             </li>
             <li class="work__item">
-              <img
-                src="./images/work/box3.jpg"
-                alt="Планшет"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/box3.webp    1x,
+                    ./images/work/box3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/box3.img    1x,
+                    ./images/work/box3@2x.img 2x
+                  "
+                />
+                <img
+                  src="./images/work/box3.jpg"
+                  alt="Планшет"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="work__overflow-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
       </section>
-      
+
       <!-- team -->
       <section class="section team">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/img1.jpg"
-                alt="Чоловік посміхається"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img1-desktop.webp    270w,
+                    ./images/team/img1-desktop@2x.webp 540w
+                  "
+                  media="(min-widht: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/img1-desktop.jpg    270w,
+                    ./images/team/img1-desktop@2x.jpg 540w
+                  "
+                  media="(min-widht: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img1-tablet.webp    354w,
+                    ./images/team/img1-tablet@2x.webp 708w
+                  "
+                  media="(min-widht: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/img1-tablet.jpg    354w,
+                    ./images/team/img1-tablet@2x.jpg 708w
+                  "
+                  media="(min-widht: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img1-phone.webp    450w,
+                    ./images/team/img1-phone@2x.webp 900w
+                  "
+                  media="(max-widht: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/img1-phone.jpg    450w,
+                    ./images/team/img1-phone@2x.jpg 900w
+                  "
+                  media="(max-widht: 767px)"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/img1-phone.jpg"
+                  alt="Чоловік посміхається"
+                  sizes="(min-width: 1200px) 25vw, (min-widht: 768px) 50vw, 100vw"
+                />
+              </picture>
               <h3 class="team__title">Ігор Дем'яненко</h3>
               <p class="team__text" lang="en">Product Designer</p>
               <ul class="list social-icon__list">
@@ -437,6 +538,7 @@
           </ul>
         </div>
       </section>
+
       <!-- clients -->
       <section class="section clients">
         <div class="container">
@@ -492,60 +594,85 @@
     <footer class="section footer">
       <div class="container footer__container">
         <div class="footer-part__container">
-            <div class="address">
-                <a class="link logo footer__logo" href="./index.html"><span class="logo__color-accent">Web</span>Studio</a>
-                <address id="contacts">
-                    <ul class="list address__list">
-                        <li class="address__item">
-                            <a class="link address__link address__color" href="https://goo.gl/maps/d6iccHRfaMmL4T6e6">м. Київ, пр-т
-                                Лесі Українки, 26</a>
-                        </li>
-                        <li class="address__item">
-                            <a class="link address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                        <li class="address__item">
-                            <a class="link address__link" href="tel:+380961111111">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
-            <div class="join">
-                <b class="join__title">приєднуйтесь</b>
-                <ul class="list social-icon__list">
-                    <li class="social-icon__item">
-                        <a class="social-icon__link join__social-icon" href="https://www.instagram.com/" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg class="join__emblem" width="20" height="20">
-                                <use href="./images/icons.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-icon__item">
-                        <a class="social-icon__link join__social-icon" href="https://twitter.com/" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg class="join__emblem" width="20" height="20">
-                                <use href="./images/icons.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-icon__item">
-                        <a class="social-icon__link join__social-icon" href="https://uk-ua.facebook.com/" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg class="join__emblem" width="20" height="20">
-                                <use href="./images/icons.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-icon__item">
-                        <a class="social-icon__link join__social-icon" href="https://ua.linkedin.com/" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg class="join__emblem" width="20" height="20">
-                                <use href="./images/icons.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+          <div class="address">
+            <a class="link logo footer__logo" href="./index.html"
+              ><span class="logo__color-accent">Web</span>Studio</a
+            >
+            <address id="contacts">
+              <ul class="list address__list">
+                <li class="address__item">
+                  <a
+                    class="link address__link address__color"
+                    href="https://goo.gl/maps/d6iccHRfaMmL4T6e6"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="link address__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="link address__link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <b class="join__title">приєднуйтесь</b>
+            <ul class="list social-icon__list">
+              <li class="social-icon__item">
+                <a
+                  class="social-icon__link join__social-icon"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="join__emblem" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icon__item">
+                <a
+                  class="social-icon__link join__social-icon"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="join__emblem" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icon__item">
+                <a
+                  class="social-icon__link join__social-icon"
+                  href="https://uk-ua.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="join__emblem" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icon__item">
+                <a
+                  class="social-icon__link join__social-icon"
+                  href="https://ua.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="join__emblem" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <form class="subscribe">
           <b class="subscribe__title">Підпишіться на розсилку</b>

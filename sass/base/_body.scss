@@ -4,4 +4,9 @@ body {
     background-color: var(--white-color);
     color: var(--title-color);
     font-family: var(--main-font);
+
+    &.modal-open{
+        overflow: hidden;
+    }
 }
+
