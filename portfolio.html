@@ -23,79 +23,71 @@
 
   <body>
     <header class="header">
-      <div class="container header__container">
-        <a class="link logo header__logo" href="./index.html"
-          ><span class="logo__color-accent">Web</span>Studio
-        </a>
-
-        <div class="mobile-menu" data-menu>
-          <div class="container mobile-menu__container">
-            <button class="mobile-menu__close-btn" type="button">
-              <svg width="40" height="40">
-                <use
-                  href="./images/icons.svg#close-burger"
-                  data-menu-close
-                ></use>
-              </svg>
+        <div class="container header__container">
+            <a class="link logo header__logo" href="./index.html"><span class="logo__color-accent">Web</span>Studio
+            </a>
+    
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu__container">
+                    <button class="mobile-menu__close-btn" type="button">
+                        <svg width="40" height="40">
+                            <use href="./images/icons.svg#close-burger" data-menu-close></use>
+                        </svg>
+                    </button>
+                    <nav class="nav">
+                        <ul class="list nav__list">
+                            <li class="item nav__item">
+                                <a class="link nav__link" href="./index.html">Студія</a>
+                            </li>
+                            <li class="item nav__item">
+                                <a class="link nav__link nav__current-link" href="./portfolio.html">Портфоліо</a>
+                            </li>
+                            <li class="item nav__item">
+                                <a class="link nav__link" href="#contacts">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="list contacts">
+                        <li class="item contacts__item contacts__mail">
+                            <a class="link contacts__link" href="mailto:info@devstudio.com">
+                                <svg class="contacts__icon icon__mail">
+                                    <use href="./images/icons.svg#envelope"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="item contacts__item contacts__phone">
+                            <a class="link contacts__link" href="tel:+380961111111">
+                                <svg class="contacts__icon icon__phone">
+                                    <use href="./images/icons.svg#phone"></use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list mobile-menu__social-list">
+                        <li class="item mobile-menu__social-item">
+                            <a class="link mobile-menu__social-link" href="">Instagram</a>
+                        </li>
+                        <li class="item mobile-menu__social-item">
+                            <a class="link mobile-menu__social-link" href="">Twitter</a>
+                        </li>
+                        <li class="item mobile-menu__social-item">
+                            <a class="link mobile-menu__social-link" href="">Facebook</a>
+                        </li>
+                        <li class="item mobile-menu__social-item">
+                            <a class="link mobile-menu__social-link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <button class="mobile-menu__burger-btn" type="button">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#burger-menu" data-menu-open></use>
+                </svg>
             </button>
-            <nav class="nav">
-              <ul class="list nav__list">
-                <li class="item nav__item">
-                  <a class="link nav__link" href="./index.html">Студія</a>
-                </li>
-                <li class="item nav__item">
-                  <a
-                    class="link nav__link nav__current-link"
-                    href="./portfolio.html"
-                    >Портфоліо</a
-                  >
-                </li>
-                <li class="item nav__item">
-                  <a class="link nav__link" href="#contacts">Контакти</a>
-                </li>
-              </ul>
-            </nav>
-            <ul class="list contacts">
-              <li class="item contacts__item contacts__mail">
-                <a class="link contacts__link" href="mailto:info@devstudio.com">
-                  <svg class="contacts__icon icon__mail">
-                    <use href="./images/icons.svg#envelope"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="item contacts__item contacts__phone">
-                <a class="link contacts__link" href="tel:+380961111111">
-                  <svg class="contacts__icon icon__phone">
-                    <use href="./images/icons.svg#phone"></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
-            </ul>
-            <ul class="list mobile-menu__social-list">
-              <li class="item mobile-menu__social-item">
-                <a class="link mobile-menu__social-link" href="">Instagram</a>
-              </li>
-              <li class="item mobile-menu__social-item">
-                <a class="link mobile-menu__social-link" href="">Twitter</a>
-              </li>
-              <li class="item mobile-menu__social-item">
-                <a class="link mobile-menu__social-link" href="">Facebook</a>
-              </li>
-              <li class="item mobile-menu__social-item">
-                <a class="link mobile-menu__social-link" href="">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
         </div>
-
-        <button class="mobile-menu__burger-btn" type="button">
-          <svg width="40" height="40">
-            <use href="./images/icons.svg#burger-menu" data-menu-open></use>
-          </svg>
-        </button>
-      </div>
     </header>
 
     <main>

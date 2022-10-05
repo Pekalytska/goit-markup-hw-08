@@ -9,9 +9,10 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 99;
 
     width: 100vw;
-    height: 100vh;
+    height: 796px;
 
     &__container {
       position: relative;
