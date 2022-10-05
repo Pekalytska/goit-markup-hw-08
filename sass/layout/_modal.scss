@@ -29,14 +29,9 @@
     height: 580px;
   }
 
-  @media screen and (min-width: 450px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     width: 450px;
     height: 608px;
-  }
-
-  @media screen and (max-width: 449px) {
-    max-width: 450px;
-    max-height: 608px;
   }
 
   background: var(--white-color);

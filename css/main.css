@@ -976,16 +976,10 @@ body.modal-open {
     height: 580px;
   }
 }
-@media screen and (min-width: 450px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 608px;
-  }
-}
-@media screen and (max-width: 449px) {
-  .modal {
-    max-width: 450px;
-    max-height: 608px;
   }
 }
 .modal__close-btn {
