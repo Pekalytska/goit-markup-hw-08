@@ -39,18 +39,20 @@
 }
 
 .portfolio {
+  &__link {
+    border: 1px solid #eeeeee;
+    border-top: none;
+
+    height: 100%;
+  }
+
   &__overflow-wrap {
     position: relative;
     overflow: hidden;
-
-    //max-height: 294px;
   }
 
   &__text-wrap {
     padding: 20px 24px;
-
-    border: 1px solid #eeeeee;
-    border-top: none;
   }
 
   &__title {
@@ -110,7 +112,7 @@
     margin-bottom: 15px;
   }
 
-  .portfolio__item:not(:last-child){
+  .portfolio__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -123,7 +125,7 @@
       margin-right: 30px;
     }
 
-    &:not(:nth-last-child(-n + 2)) {
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
