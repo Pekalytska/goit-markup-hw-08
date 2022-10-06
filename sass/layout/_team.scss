@@ -8,8 +8,9 @@
     border-radius: 0px 0px 4px 4px;
   }
 
-  &__img {
-    margin-bottom: 30px;
+  &__wrap {
+    padding-top: 30px;
+    padding-bottom: 24px;
   }
 
   &__title {
@@ -31,11 +32,10 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .team__item {
-    padding-bottom: 24px;
-    margin-bottom: 30px;
-  }
+@media screen and (max-width: 767px){
+    .team__item{
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -69,6 +69,10 @@
 
     &__item {
       margin-left: 30px;
+    }
+
+    &__wrap {
+      padding-bottom: 30px;
     }
   }
 }
