@@ -12,6 +12,7 @@
     z-index: 99;
 
     width: 100vw;
+    height: 100vh;
 
     &__container {
       position: relative;
@@ -21,8 +22,6 @@
       padding-bottom: 48px;
       padding-top: 48px;
       padding-left: 40px;
-
-      height: 100vh;
     }
 
     &__social-list {
