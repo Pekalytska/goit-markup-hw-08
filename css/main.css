@@ -269,12 +269,13 @@ body.modal-open {
     padding-top: 16px;
     padding-bottom: 16px;
   }
+  .nav {
+    flex-grow: 1;
+    margin-bottom: auto;
+  }
   .nav__link {
     font-size: 40px;
     line-height: 1.18;
-  }
-  .nav__list {
-    margin-bottom: auto;
   }
   .nav__item:not(:last-child) {
     margin-bottom: 32px;
@@ -1147,7 +1148,6 @@ body.modal-open {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
     padding-bottom: 48px;
     padding-top: 48px;
